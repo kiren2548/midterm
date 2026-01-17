@@ -1,0 +1,40 @@
+###
+GET http://localhost:3000/api/license
+###
+GET http://localhost:3000/api/license/1
+###
+POST http://localhost:3000/api/license
+Content-Type: application/json
+
+{
+    "type":"รถส่วน2บุคล",
+    "expiryDate":"10/12/60",
+    "lssueData":"10/12/65",
+    "licensenumber":"1472571"
+}
+###
+POST http://localhost:3000/api/license
+Content-Type: application/json
+
+{
+    "type":"รถส่วนบุคล",
+    "expiryDate":"10/12/60",
+    "lssueData":"รถส่วนบุคล",
+    "licensenumber":"1472574"
+}
+###
+PUT http://localhost:3000/api/license/2
+Content-Type: application/json
+
+{
+    "username":"johnupdate",
+    "password":"newpassword",
+    "firstname":"JohnUpdated",
+    "lastname":"DoeUpdated"
+}
+###
+DELETE http://localhost:3000/api/license/1
+
+###
+DELETE http://localhost:3000/api/users/999
+
